@@ -46,7 +46,44 @@ class HomeTab extends GetView<HomeController> {
                     unSelectedColor: Colors.white,
                     selectedColor: Colors.amberAccent,
                     defaultSelected: null,
-                  )
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  const Text('2 Age Group'),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  TextField(
+                    readOnly: true,
+                    controller: controller.ageGroupController,
+                    decoration: const InputDecoration(
+                      hintText: 'Please select Gender',
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  CustomRadioButton(
+                    buttonLables: [
+                      controller.fifteenToSeventeen,
+                      controller.eighteenToTwenty,
+                      controller.twentyAbove
+                    ],
+                    buttonValues: [
+                      controller.fifteenToSeventeen,
+                      controller.eighteenToTwenty,
+                      controller.twentyAbove
+                    ],
+                    radioButtonValue: (value) {
+                      controller.selectAgeGroup(value.toString());
+                      // Get.snackbar('Selected', controller.gender.value);
+                    },
+                    unSelectedColor: Colors.white,
+                    selectedColor: Colors.amberAccent,
+                    defaultSelected: null,
+                  ),
                 ],
               ),
             ),
