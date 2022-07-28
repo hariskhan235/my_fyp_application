@@ -1,18 +1,21 @@
-import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:my_app/utils/utils.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
 
   final genderController = TextEditingController();
   var selectedIndex = 0.obs;
   var gender = ''.obs;
-  var male = 'Male';
-  var female = 'Female';
+  var sscMarks = '33%-39%';
 
   final count = 0.obs;
+
+  onChange(String value){
+    sscMarks = value;
+    update();
+  }
   void ontap(int index) {
     selectedIndex.value = index;
     update();
@@ -30,7 +33,6 @@ class HomeController extends GetxController {
     genderController.text = gender.value;
     update();
   }
-
   @override
   void onInit() {
     super.onInit();

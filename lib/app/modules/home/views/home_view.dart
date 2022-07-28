@@ -11,6 +11,7 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  String dropdownValue = 'one';
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(
@@ -22,17 +23,26 @@ class _HomeViewState extends State<HomeView> {
                 index: controller.selectedIndex.value,
                 children: [
                   HomeTab(),
-                  const Text('Index 1 Settings'),
+                  const Scaffold(
+                    body: Center(),
+                  ),
                   const Text('Index 2 Profile'),
                 ],
               ),
             ),
           ),
           bottomNavigationBar: BottomNavigationBar(
+            iconSize: 25,
+            selectedFontSize: 13,
+            unselectedFontSize: 10,
+            selectedItemColor: Colors.green,
+            backgroundColor: Colors.amberAccent,
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.settings), label: 'Settings'),
+                  icon: Icon(Icons.settings),
+                  label: 'Degree Programs',
+                  tooltip: 'Degree Programs'),
               BottomNavigationBarItem(
                   icon: Icon(Icons.person), label: 'Profile'),
             ],

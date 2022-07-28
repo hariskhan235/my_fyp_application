@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
 import 'package:custom_radio_grouped_button/custom_radio_grouped_button.dart';
 import 'package:my_app/app/modules/home/controllers/home_controller.dart';
+import 'package:my_app/utils/utils.dart';
 
 class HomeTab extends GetView<HomeController> {
   final groupButtonController = GroupButtonController();
@@ -34,10 +35,10 @@ class HomeTab extends GetView<HomeController> {
                     ),
                   ),
                   CustomRadioButton(
-                    buttonLables: [controller.male, controller.female],
+                    buttonLables: [male, female],
                     buttonValues: [
-                      controller.male,
-                      controller.female,
+                      male,
+                      female,
                     ],
                     radioButtonValue: (value) {
                       controller.selectGender(value.toString());
@@ -46,7 +47,94 @@ class HomeTab extends GetView<HomeController> {
                     unSelectedColor: Colors.white,
                     selectedColor: Colors.amberAccent,
                     defaultSelected: null,
-                  )
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        'SSC Marks Percentage',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      DropdownButton<String>(
+                        value: controller.sscMarks,
+                        //icon: const Icon(Icons.arrow_downward),
+                        //elevation: 16,
+                        style: const TextStyle(color: Colors.deepPurple),
+                        // underline: Container(
+                        //   width: MediaQuery.of(context).size.width,
+                        //   height: 2,
+                        //   color: Colors.deepPurpleAccent,
+                        // ),
+                        onChanged: (String? newValue) {
+                          controller.onChange(newValue.toString());
+                        },
+                        items: <String>[
+                          '33%-39%',
+                          '40%-49%',
+                          '50%-59%',
+                          '60%-69%',
+                          '70%-79%',
+                          '80% or Above'
+                        ].map<DropdownMenuItem<String>>(
+                          (String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value),
+                            );
+                          },
+                        ).toList(),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10,),
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        'HSSC Marks Percentage',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      DropdownButton<String>(
+                        value: controller.sscMarks,
+                        //icon: const Icon(Icons.arrow_downward),
+                        //elevation: 16,
+                        style: const TextStyle(color: Colors.deepPurple),
+                        // underline: Container(
+                        //   width: MediaQuery.of(context).size.width,
+                        //   height: 2,
+                        //   color: Colors.deepPurpleAccent,
+                        // ),
+                        onChanged: (String? newValue) {
+                          controller.onChange(newValue.toString());
+                        },
+                        items: <String>[
+                          '33%-39%',
+                          '40%-49%',
+                          '50%-59%',
+                          '60%-69%',
+                          '70%-79%',
+                          '80% or Above'
+                        ].map<DropdownMenuItem<String>>(
+                          (String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value),
+                            );
+                          },
+                        ).toList(),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
