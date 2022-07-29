@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:my_app/app/modules/home/controllers/home_controller.dart';
 import 'package:my_app/app/modules/home/views/degreeProgramsTab.dart';
 import 'package:my_app/app/modules/home/views/home_tab.dart';
+import 'package:my_app/app/modules/home/views/profile_tab.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _HomeViewState extends State<HomeView> {
     return GetBuilder<HomeController>(
       builder: (controller) {
         return Scaffold(
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           body: SafeArea(
             child: Center(
               child: IndexedStack(
@@ -25,7 +27,7 @@ class _HomeViewState extends State<HomeView> {
                 children: [
                   HomeTab(),
                   const DegreeProgramsTab(),
-                  const Text('Index 2 Profile'),
+                  const ProfileTab(),
                 ],
               ),
             ),
@@ -34,8 +36,8 @@ class _HomeViewState extends State<HomeView> {
             iconSize: 25,
             selectedFontSize: 13,
             unselectedFontSize: 10,
-            selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
-            backgroundColor: Colors.amberAccent,
+            selectedItemColor:Theme.of(context).bottomNavigationBarTheme.selectedItemColor,
+            backgroundColor: Theme.of(context).bottomNavigationBarTheme.backgroundColor,
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
               BottomNavigationBarItem(

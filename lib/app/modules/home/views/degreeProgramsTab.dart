@@ -10,7 +10,12 @@ class DegreeProgramsTab extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const FittedBox(child: Text('Recommended Degree Programs')),
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+        title: FittedBox(
+            child: Text(
+          'Recommended Degree Programs',
+          style: Theme.of(context).textTheme.headline2,
+        )),
         centerTitle: true,
       ),
       body: GridView(
@@ -22,117 +27,156 @@ class DegreeProgramsTab extends GetView<HomeController> {
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('Computer Science'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'Computer Science',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BBA'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BBA',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BS English'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BS English',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BS Maths'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BS Maths',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BS Urdu'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BS Urdu',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BS Islamiyat'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BS Islamiyat',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('Engineering'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'Engineering',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('Health Sciences'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'Health Sciences',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BBA'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BBA',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BBA'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BBA',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BBA'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BBA',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BBA'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BBA',
+                style: whiteTextStyle,
+              ),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             width: 50,
             height: 50,
-            decoration: decoration,
-            child: const Center(
-              child: Text('BBA'),
+            decoration: decoration(),
+            child: Center(
+              child: Text(
+                'BBA',
+                style: whiteTextStyle,
+              ),
             ),
           )
         ],

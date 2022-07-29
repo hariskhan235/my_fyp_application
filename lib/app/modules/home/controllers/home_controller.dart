@@ -50,6 +50,11 @@ class HomeController extends GetxController {
     genderController.text = gender.value;
     update();
   }
+
+  void gotoProfile() {
+    selectedIndex.value == 2;
+    update();
+  }
   @override
   void onInit() {
     super.onInit();
