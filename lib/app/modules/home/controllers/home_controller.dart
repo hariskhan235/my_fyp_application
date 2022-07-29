@@ -9,11 +9,28 @@ class HomeController extends GetxController {
   var selectedIndex = 0.obs;
   var gender = ''.obs;
   var sscMarks = '33%-39%';
+  var hsscMarks = '33%-39%';
+
+  var sscMajorSubject = 'Science';
+  var hsscMajorSubject = 'Pre-Medical';
 
   final count = 0.obs;
 
-  onChange(String value){
+  onSscMarksChange(String value){
     sscMarks = value;
+    update();
+  }
+  onHSscMarksChange(String value){
+    hsscMarks = value;
+    update();
+  }
+
+  onSscSubjectChange(String value){
+    sscMajorSubject = value;
+    update();
+  }
+  onHSscSubjectChange(String value){
+    hsscMajorSubject = value;
     update();
   }
   void ontap(int index) {

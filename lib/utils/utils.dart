@@ -1,3 +1,6 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
 var male = 'Male';
   var female = 'Female';
 
@@ -10,3 +13,11 @@ var male = 'Male';
 
 
   enum SscMarksPercentage {SSCOne, SSCTwo,SSCThree,SSCFour,SSCFive,SSCSix}
+
+
+  BoxDecoration decoration = const BoxDecoration(
+     borderRadius: BorderRadius.all(
+                Radius.circular(20),
+              ),
+                  color: Colors.amberAccent,
+  );

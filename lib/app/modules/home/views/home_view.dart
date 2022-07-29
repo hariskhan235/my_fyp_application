@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app/app/modules/home/controllers/home_controller.dart';
+import 'package:my_app/app/modules/home/views/degreeProgramsTab.dart';
 import 'package:my_app/app/modules/home/views/home_tab.dart';
 
 class HomeView extends StatefulWidget {
@@ -23,9 +24,7 @@ class _HomeViewState extends State<HomeView> {
                 index: controller.selectedIndex.value,
                 children: [
                   HomeTab(),
-                  const Scaffold(
-                    body: Center(),
-                  ),
+                  const DegreeProgramsTab(),
                   const Text('Index 2 Profile'),
                 ],
               ),
@@ -35,7 +34,7 @@ class _HomeViewState extends State<HomeView> {
             iconSize: 25,
             selectedFontSize: 13,
             unselectedFontSize: 10,
-            selectedItemColor: Colors.green,
+            selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
             backgroundColor: Colors.amberAccent,
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
