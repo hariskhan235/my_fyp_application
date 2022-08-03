@@ -19,9 +19,11 @@ class HomeTab extends GetView<HomeController> {
         ),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: (){
-            controller.gotoProfile();
-          }, icon: const Icon(Icons.person))
+          IconButton(
+              onPressed: () {
+                controller.gotoProfile(2);
+              },
+              icon: const Icon(Icons.person))
         ],
       ),
       body: SafeArea(
@@ -58,7 +60,56 @@ class HomeTab extends GetView<HomeController> {
                   const SizedBox(
                     height: 20,
                   ),
-                
+                  ExpansionTile(
+                    title: const Text('SSC Interested Subjects'),
+                    initiallyExpanded: true,
+                    children: List.generate(
+                      controller.subjectsSSC.length,
+                      (index) {
+                        var subjectsSSC = controller.subjectsSSC.elementAt(index);
+                        return CheckboxListTile(
+                          value: subjectsSSC['isCheck'],
+                          onChanged: (value) {
+                            controller.onSScInteredtedChanged(index, value!);
+                            controller.update();
+                          },
+                          title: Text(
+                            subjectsSSC['title'],
+                            style: Theme.of(context).textTheme.bodyText1,
+                            overflow: TextOverflow.fade,
+                            softWrap: false,
+                            maxLines: 1,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: 10,),
+                  ExpansionTile(
+                    title: const Text('HSSC Interested Subjects'),
+                    initiallyExpanded: true,
+                    children: List.generate(
+                      controller.subjectsHSSC.length,
+                      (index) {
+                        var subjectsHSSC = controller.subjectsHSSC.elementAt(index);
+                        return CheckboxListTile(
+                          value: subjectsHSSC['isCheck'],
+                          onChanged: (value) {
+                            controller.onHSScInteredtedChanged(index,value!);
+                            controller.update();
+                          },
+                          title: Text(
+                            subjectsHSSC['title'],
+                            style: Theme.of(context).textTheme.bodyText1,
+                            overflow: TextOverflow.fade,
+                            softWrap: false,
+                            maxLines: 1,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

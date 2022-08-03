@@ -1,0 +1,87 @@
+{
+    "degreePrograms": [
+        {
+            "id": "1",
+            "title": "BS(COMPUTER SCIENCE)",
+            "backgroundImageSource": "https://www.mul.edu.pk/images/programs/bs-computer-science_1.jpg",
+            "careerOpportunities": "Your career prospects will be excellent: You may become a software engineer, programmer, web developer, games programmer or computer graphic designer.",
+            "exam": "Cut-off marks in the NTS-NAT IE exam to be determined by the University",
+            "programInfo": {
+                "one": "Impart in-depth understanding of Computer Science field according to international standards",
+                "two": "Convert understanding to innovations",
+                "three": "Build diverse careers in Computer Science as productive IT professionals and entrepreneurs for the socio-economic development",
+                "four": "Prepare students for the graduate level studies and research",
+                "five": "Develop effective communication, management and leadership skills",
+                "six": "Impart professional ethics and collaborative team player abilities"
+            },
+            "awardOfDegree": {
+                "title": "For the award of BS (Computer Science) degree, a student must have:",
+                "one": "Passed courses totalling at least 130 credit hours, including all those courses which have been specified as Core courses.",
+                "two": "Obtained a CGPA of at least 2.00"
+            },
+            "eligibility": {
+                "one": "At least 60% marks in SSC (Matric) or an equivalent examination (such as O-levels) AND",
+                "two": "Should have studied for HSSC or an equivalent qualification, for at least two years AND",
+                "three": "At least 50% marks in HSSC or an equivalent qualification AND",
+                "four": "Should have EITHER",
+                "five": "studied Mathematics at the HSSC or equivalent level. OR",
+                "six": "pass HSSC level Mathematics exam within one year of admission (for candidates with Pre-medical background), conducted by any one of the following:",
+                "seven": "Local Board of Intermediate & Secondary Education",
+                "eight": "A recognized Foreign Board (Oxford, Cambridge, etc.)"
+            },
+            "selectionCriteria": {
+                "one": "50% weight to higher percent score of SSC (or an equivalent exam) OR HSSC (or an equivalent exam) AND",
+                "two": "50% weight to marks obtained in Admission Test"
+            },
+            "offeredCapuses":{
+                "one":"Chiniot-Faisalabad",
+                "two":"Islamabad",
+                "three":"Karachi",
+                "four":"Lahore",
+                "five":"Peshawar"
+            }
+        },
+        {
+            "id": "2",
+            "title": "BBA(Bachelor of Business Administration)",
+            "backgroundImageSource": "https://www.mul.edu.pk/images/programs/bs-computer-science_1.jpg",
+            "careerOpportunities": "Your career prospects will be excellent: You may become a software engineer, programmer, web developer, games programmer or computer graphic designer.",
+            "exam": "Cut-off marks in the NTS-NAT IE exam to be determined by the University",
+            "programInfo": {
+                "one": "Impart in-depth understanding of Computer Science field according to international standards",
+                "two": "Convert understanding to innovations",
+                "three": "Build diverse careers in Computer Science as productive IT professionals and entrepreneurs for the socio-economic development",
+                "four": "Prepare students for the graduate level studies and research",
+                "five": "Develop effective communication, management and leadership skills",
+                "six": "Impart professional ethics and collaborative team player abilities"
+            },
+            "awardOfDegree": {
+                "title": "For the award of BS (Computer Science) degree, a student must have:",
+                "one": "Passed courses totalling at least 130 credit hours, including all those courses which have been specified as Core courses.",
+                "two": "Obtained a CGPA of at least 2.00"
+            },
+            "eligibility": {
+                "one": "At least 60% marks in SSC (Matric) or an equivalent examination (such as O-levels) AND",
+                "two": "Should have studied for HSSC or an equivalent qualification, for at least two years AND",
+                "three": "At least 50% marks in HSSC or an equivalent qualification AND",
+                "four": "Should have EITHER",
+                "five": "studied Mathematics at the HSSC or equivalent level. OR",
+                "six": "pass HSSC level Mathematics exam within one year of admission (for candidates with Pre-medical background), conducted by any one of the following:",
+                "seven": "Local Board of Intermediate & Secondary Education",
+                "eight": "A recognized Foreign Board (Oxford, Cambridge, etc.)"
+            },
+            "selectionCriteria": {
+                "one": "50% weight to higher percent score of SSC (or an equivalent exam) OR HSSC (or an equivalent exam) AND",
+                "two": "50% weight to marks obtained in Admission Test"
+            },
+            "offeredCapuses":{
+                "one":"Chiniot-Faisalabad",
+                "two":"Islamabad",
+                "three":"Karachi",
+                "four":"Lahore",
+                "five":"Peshawar"
+            }
+        }
+       
+    ]
+}

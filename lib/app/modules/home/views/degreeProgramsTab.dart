@@ -12,10 +12,11 @@ class DegreeProgramsTab extends GetView<HomeController> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         title: FittedBox(
-            child: Text(
-          'Recommended Degree Programs',
-          style: Theme.of(context).textTheme.headline2,
-        )),
+          child: Text(
+            'Recommended Degree Programs',
+            style: Theme.of(context).textTheme.headline2,
+          ),
+        ),
         centerTitle: true,
       ),
       body: GridView(
@@ -23,162 +24,149 @@ class DegreeProgramsTab extends GetView<HomeController> {
         gridDelegate:
             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         children: [
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'Computer Science',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BBA',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BS English',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BS Maths',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BS Urdu',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BS Islamiyat',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'Engineering',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'Health Sciences',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BBA',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BBA',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BBA',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BBA',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
+              const Text('Computer Science')
+            ],
           ),
-          Container(
-            margin: const EdgeInsets.all(10),
-            width: 50,
-            height: 50,
-            decoration: decoration(),
-            child: Center(
-              child: Text(
-                'BBA',
-                style: whiteTextStyle,
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 120,
+                height: 120,
+                decoration: decoration(),
               ),
-            ),
-          )
+              const Text('Computer Science')
+            ],
+          ),
         ],
       ),
     );
