@@ -26,7 +26,7 @@ class _ProfileTabState extends State<ProfileTab> {
               radius: 50,
               child: const Icon(Icons.admin_panel_settings),
             ),
-            Text('Hello')
+            const Text('Hello')
           ],
         ),
       ),

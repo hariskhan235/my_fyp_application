@@ -51,6 +51,7 @@ class HomeTab extends GetView<HomeController> {
                     ],
                     radioButtonValue: (value) {
                       controller.selectGender(value.toString());
+                      controller.update();
                       // Get.snackbar('Selected', controller.gender.value);
                     },
                     unSelectedColor: Colors.white,
@@ -62,11 +63,12 @@ class HomeTab extends GetView<HomeController> {
                   ),
                   ExpansionTile(
                     title: const Text('SSC Interested Subjects'),
-                    initiallyExpanded: true,
+                    //initiallyExpanded: true,
                     children: List.generate(
                       controller.subjectsSSC.length,
                       (index) {
-                        var subjectsSSC = controller.subjectsSSC.elementAt(index);
+                        var subjectsSSC =
+                            controller.subjectsSSC.elementAt(index);
                         return CheckboxListTile(
                           value: subjectsSSC['isCheck'],
                           onChanged: (value) {
@@ -84,18 +86,22 @@ class HomeTab extends GetView<HomeController> {
                       },
                     ),
                   ),
-                  const SizedBox(height: 10,),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   ExpansionTile(
                     title: const Text('HSSC Interested Subjects'),
-                    initiallyExpanded: true,
+                    //initiallyExpanded: true,
                     children: List.generate(
                       controller.subjectsHSSC.length,
                       (index) {
-                        var subjectsHSSC = controller.subjectsHSSC.elementAt(index);
+                        var subjectsHSSC =
+                            controller.subjectsHSSC.elementAt(index);
                         return CheckboxListTile(
+                          controlAffinity: ListTileControlAffinity.trailing,
                           value: subjectsHSSC['isCheck'],
                           onChanged: (value) {
-                            controller.onHSScInteredtedChanged(index,value!);
+                            controller.onHSScInteredtedChanged(index, value!);
                             controller.update();
                           },
                           title: Text(
@@ -109,7 +115,9 @@ class HomeTab extends GetView<HomeController> {
                       },
                     ),
                   ),
-                  const SizedBox(height: 10,),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -333,22 +341,7 @@ class HomeTab extends GetView<HomeController> {
                     height: 20,
                   ),
                   InkWell(
-                    onTap: () {
-                      print(MediaQuery.of(context).size.width);
-                      Get.dialog(
-                        AlertDialog(
-                          title: const Text('Degree Program'),
-                          content: const Text('Best Suits Your Record'),
-                          actions: [
-                            TextButton(
-                                onPressed: () {
-                                  Get.back();
-                                },
-                                child: const Text('Ok'))
-                          ],
-                        ),
-                      );
-                    },
+                    onTap: () {},
                     child: Container(
                       margin: const EdgeInsets.only(left: 20.0, right: 20.0),
                       decoration: const BoxDecoration(
@@ -359,11 +352,26 @@ class HomeTab extends GetView<HomeController> {
                       ),
                       width: MediaQuery.of(context).size.width,
                       height: 30,
-                      child: Center(
-                        child: Text(
-                          'Check Now',
-                          style: Theme.of(context).textTheme.headline2,
-                        ),
+                      child: ElevatedButton.icon(
+                        onPressed: () {
+                          print(MediaQuery.of(context).size.width);
+                          Get.dialog(
+                            AlertDialog(
+                              title: const Text('Degree Program'),
+                              content: const Text('Best Suits Your Record'),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Get.back();
+                                  },
+                                  child: const Text('Ok'),
+                                )
+                              ],
+                            ),
+                          );
+                        },
+                        icon: const Icon(Icons.check),
+                        label: const Text('Check Now'),
                       ),
                     ),
                   ),

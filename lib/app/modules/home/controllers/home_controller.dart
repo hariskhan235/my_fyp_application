@@ -12,15 +12,6 @@ class HomeController extends GetxController {
   var sscMajorSubject = 'Science';
   var hsscMajorSubject = 'Pre-Medical';
 
-  final hobbies = <Map>[
-    {"title": "Photography", "isCheck": false},
-    {"title": "Arts and Crafts", "isCheck": false},
-    {"title": "Cooking", "isCheck": false},
-    {'title': 'Traveling', 'isCheck': false},
-    {'title': 'Computer Technology', 'isCheck': false},
-    {'title': 'Reading Books', 'isCheck': false},
-    {'title': 'Teaching', 'isCheck': false}
-  ].obs;
   final subjectsSSC = <Map>[
     {"title": "Urdu", "isCheck": false},
     {"title": "English", "isCheck": false},
@@ -81,11 +72,6 @@ class HomeController extends GetxController {
       //female = genderController.text;
     }
     genderController.text = gender.value;
-    update();
-  }
-
-  void onHobbiesChanged(int index, bool value) {
-    hobbies[index]['isCheck'] = value;
     update();
   }
 
